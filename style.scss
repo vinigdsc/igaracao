@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+button {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-image: linear-gradient(to right, #069106, black);
+  color: white;
+}
+
+$texto: white;
+$cor1: #353535;
+$cor2: #ffb200;
+$cor3: #ffcb42;
+$cor4: #fff4cf;
+
+header {
+  position: fixed;
+  background-image: linear-gradient(to right, $cor1, $cor1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  width: 100%;
+  z-index: 1;
+
+  li,
+  a,
+  button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: $cor1;
+    color: $texto;
+  }
+
+  img {
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    padding-left: 6%;
+    color: $texto;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+}
+.logo {
+  cursor: pointer;
+}
+.logo-name {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+.background {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: 25% 75%;
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(/img/dog1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+}
+
+.texto {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  color: white;
+  font-size: 50px;
+}
+
+.doe {
+  background-color: #3c6e71;
+  padding: 8px 16px;
+  gap: 8px;
+  border-radius: 12px;
+  width: 123px;
+  height: 54px;
+  margin-left: 136px;
+}
